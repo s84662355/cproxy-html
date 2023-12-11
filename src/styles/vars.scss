@@ -1,0 +1,66 @@
+$blackColor: #000000;
+$whiteColor: #ffffff;
+$baseColor:#1093FF;
+$colorEDF2F5:#EDF2F5;
+$color303336:#303336;
+$color21B064:#21B064;
+$color656E75:#656E75;
+$colorEEEEEE:#EEEEEE;
+$color9BA2A8:#9BA2A8;
+$colorE6F4FF:#E6F4FF;
+$color132940:#132940;
+$colorEDF0F2:#EDF0F2;
+$colorDBF0FF:#DBF0FF;
+$colorEEF6FE:#EEF6FE;
+$color209CDF:#209CDF;
+$color666666:#666666;
+$color333333:#333333;
+$colorFF3333:#FF3333;
+$color999999:#999999;
+
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@mixin elDialog {
+  padding: 22px 20px 22px 30px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .el-dialog__header {
+    margin: 0;
+    padding: 0;
+
+    .dialog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h4 {
+        font-size: 18px;
+        color: $color303336;
+      }
+
+      .el-icon {
+        cursor: pointer;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .el-dialog__footer {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+
+    .el-button {
+      margin-left: 16px;
+      height: 36px;
+      line-height: 34px;
+      font-size: 14px;
+    }
+  }
+}
